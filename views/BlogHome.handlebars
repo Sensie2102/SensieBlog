@@ -1,4 +1,13 @@
 <ul class="Blogs">
+  <style>
+    .add-blog-heading {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 50px;
+        }
+    </style>
+  <h2 class = "add-blog-heading">Add a blog   <a href = "/addBlog/">Here!</a></h2>
   {{#each blog}}
     <li><a href="/blog/{{this.slug}}">{{this.name}}</li>
   {{/each}}
